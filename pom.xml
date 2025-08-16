@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" ...>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.yourname</groupId>
+  <artifactId>runelite-osrs-market-advisor</artifactId>
+  <version>1.0.0</version>
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <runelite.version>1.10.0</runelite.version>
+  </properties>
+  <repositories>
+    <repository>
+      <id>runelite</id>
+      <url>https://repo.runelite.net</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <dependency>
+      <groupId>net.runelite</groupId>
+      <artifactId>client</artifactId>
+      <version>${runelite.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.10.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.rometools</groupId>
+      <artifactId>rome</artifactId>
+      <version>1.18.0</version>
+    </dependency>
+  </dependencies>
+</project>
